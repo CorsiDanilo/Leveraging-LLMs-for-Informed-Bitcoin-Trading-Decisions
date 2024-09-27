@@ -1,0 +1,9 @@
+.venv
+secrets
+data
+hf_data
+*__pycache__*
+data_mining/utils/chromedriver.exe
+.env
+models/pretrained
+wandb
