@@ -59,14 +59,14 @@ project.
 
 We use Python 3.12.4 which is the last version supported by PyTorch.
 
-Create an enviroment
+1. Create an enviroment
 
 ```
 python3 -m venv .venv
 .venv\scripts\activate
 ```
 
-Install requirements
+2. Install requirements
 
 ```
 pip install -r requirements.py
@@ -84,11 +84,11 @@ The `merged` folder contains the raw dataset without annotation of LLMs (price d
 ## Demo
 ### Live-data annotation
 
-**Setup the offline LLMs**
+**1. Setup the offline LLMs**
 
-Download and install [Ollama](https://ollama.com/)
+1.1 Download and install [Ollama](https://ollama.com/)
 
-Setup the following LLMs:
+1.2 Setup the following LLMs:
 - [LLAMA3.1](https://ollama.com/library/llama3.1)
 - [MISTRAL-NEMO](https://ollama.com/library/mistral-nemo)
 - [PHI3](https://ollama.com/library/phi3)
@@ -96,11 +96,11 @@ Setup the following LLMs:
 
 ---
 
-**Setup the online LLM**
+**2. Setup the online LLM**
 
-Create [Gemini API Key](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
+2.1 Create [Gemini API Key](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
 
-Create `gemini.json` file in the `secrets` directory and add
+2.2 Create `gemini.json` file in the `secrets` directory and add
 ```
 {
     "GOOGLE_API_KEY_1": "<api_key>",
@@ -109,11 +109,11 @@ Create `gemini.json` file in the `secrets` directory and add
 
 ---
 
-**Setup the Reddit data retrival**
+**3. Setup the Reddit data retrival**
 
-Create [Reddit API Key](https://old.reddit.com/prefs/apps)
+3.1 Create [Reddit API Key](https://old.reddit.com/prefs/apps)
 
-Create `reddit.json` file in the `secrets` directory and add
+3.2 Create `reddit.json` file in the `secrets` directory and add
 ```
 {
     "client_id": "<client_id>",
@@ -124,11 +124,11 @@ Create `reddit.json` file in the `secrets` directory and add
 
 ---
 
-**Setup the News data retrival**
+**4. Setup the News data retrival**
 
-Download and install [HTTP Toolkit](https://httptoolkit.com)
+4.1 Download and install [HTTP Toolkit](https://httptoolkit.com)
 
-Set on your pc as a custom proxy:
+4.2 Set on your pc as a custom proxy:
 ```
 ip: 127.0.0.1
 port: 8080
@@ -136,16 +136,18 @@ port: 8080
 
 ---
 
-**Execute the demo**
+**5. Execute the demo**
 
-Execute `python -m demo.demo`
+5.1 Execute `python -m demo.demo`
 
 ---
 
 ### Backtesting
 
-Execute `python -m backtest.backtest`
+1. Execute `python -m backtest.backtest`
 
 ## Examples
+### Live-data annotation
 ![demo_live_data_annotation](examples/demo_live_data_annotation.png)
+### Backtesting
 ![backtest_utility_example_1](examples/backtest_utility_example_1.png)
