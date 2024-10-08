@@ -73,7 +73,7 @@ pip install -r requirements.py
 ```
 
 ## Dataset
-You can download the needed data from this [Hugging Face Repository](https://huggingface.co/datasets/danilocorsi/Bitcoin-Price-Blockchain-Sentiment-Indexes-News-Reddit-Post-Comments-Dataset).
+You can download the needed data from this [Hugging Face Repository](https://huggingface.co/datasets/danilocorsi/LLMs-Sentiment-Augmented-Bitcoin-Dataset/tree/main).
 
 Put the downloaded folders into `hf_data` directory. 
 
