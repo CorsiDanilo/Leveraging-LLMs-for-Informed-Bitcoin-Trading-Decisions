@@ -59,14 +59,14 @@ project.
 
 We use Python 3.12.4 which is the last version supported by PyTorch.
 
-1. Create an enviroment
+### 1. Create an enviroment
 
 ```
 python3 -m venv .venv
 .venv\scripts\activate
 ```
 
-2. Install requirements
+### 2. Install requirements
 
 ```
 pip install -r requirements.py
@@ -84,36 +84,26 @@ The `merged` folder contains the raw dataset without annotation of LLMs (price d
 ## Demo
 ### Live-data annotation
 
-**1. Setup the offline LLMs**
+Download and install [Ollama](https://ollama.com/)
 
-1.1 Download and install [Ollama](https://ollama.com/)
-
-1.2 Setup the following LLMs:
+Setup the following LLMs:
 - [LLAMA3.1](https://ollama.com/library/llama3.1)
 - [MISTRAL-NEMO](https://ollama.com/library/mistral-nemo)
 - [PHI3](https://ollama.com/library/phi3)
 - [QWEN2](https://ollama.com/library/qwen2)
 
----
+Create [Gemini API Key](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
 
-**2. Setup the online LLM**
-
-2.1 Create [Gemini API Key](https://ai.google.dev/gemini-api/docs/quickstart?lang=python)
-
-2.2 Create `gemini.json` file in the `secrets` directory and add
+Create `gemini.json` file in the `secrets` directory and add
 ```
 {
     "GOOGLE_API_KEY_1": "<api_key>",
 }
 ```
 
----
+Create [Reddit API Key](https://old.reddit.com/prefs/apps)
 
-**3. Setup the Reddit data retrival**
-
-3.1 Create [Reddit API Key](https://old.reddit.com/prefs/apps)
-
-3.2 Create `reddit.json` file in the `secrets` directory and add
+Create `reddit.json` file in the `secrets` directory and add
 ```
 {
     "client_id": "<client_id>",
@@ -122,29 +112,24 @@ The `merged` folder contains the raw dataset without annotation of LLMs (price d
 }
 ```
 
----
+Download and install [HTTP Toolkit](https://httptoolkit.com)
 
-**4. Setup the News data retrival**
-
-4.1 Download and install [HTTP Toolkit](https://httptoolkit.com)
-
-4.2 Set on your pc as a custom proxy:
+Set on your pc as a custom proxy:
 ```
 ip: 127.0.0.1
 port: 8080
 ```
 
----
-
-**5. Execute the demo**
-
-5.1 Execute `python -m demo.demo`
-
----
+Execute 
+```
+python -m demo.demo
+```
 
 ### Backtesting
-
-1. Execute `python -m backtest.backtest`
+Execute
+```
+python -m backtest.backtest
+```
 
 ## Examples
 ### Live-data annotation
