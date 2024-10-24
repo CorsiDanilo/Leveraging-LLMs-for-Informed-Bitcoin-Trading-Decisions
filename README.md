@@ -47,10 +47,10 @@ visualization process.
 prediction process.
 - `secrets`: Contains the secrets used within the project such as api keys and
 account credentials.
-- `shared: Contains variables and constants shared by most of the files in the
+- `shared`: Contains variables and constants shared by most of the files in the
 project.
 - `utils`: Contains methods that are shared by most of the files in the project.
-- `config.py: Contains the configuration variables shared by most of the files in
+- `config.py`: Contains the configuration variables shared by most of the files in
 the project.
 - `requirements.py`: Contains requirements to be installed before running the
 project.
